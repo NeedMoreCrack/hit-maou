@@ -7,9 +7,9 @@
 
 .mole {
     position: absolute;
-    width: 50px;
+    width: 55px;
     height: 50px;
-    background-image: url('./pic/mouse.png');
+    background-image: url('./pic/maou.png');
     background-size: cover;
     transition: opacity 0.5s;
 }
