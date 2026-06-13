@@ -26,6 +26,13 @@
     mole.style.top = getRandomPosition(450) + 'px';
     mole.style.left = getRandomPosition(450) + 'px';
     container.appendChild(mole);
+
+    // 30 秒後如果還沒被點掉，就自動移除
+    setTimeout(function () {
+      if (mole.parentNode) {
+        mole.remove();
+      }
+    }, 30000);
   }
 
   function getRandomPosition(max) {
